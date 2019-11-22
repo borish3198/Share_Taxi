@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OutgoingActivity">
+
+    <Button
+        android:id="@+id/terminalButton"
+        android:layout_width="289dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="196dp"
+        android:text="1. 가경 터미널"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/jochiwonButton"
+        android:layout_width="289dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:text="2. 조치원역"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terminalButton" />
+
+    <Button
+        android:id="@+id/mihoButton"
+        android:layout_width="289dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="4. 미호 삼거리"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/osongButton"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <Button
+        android:id="@+id/osongButton"
+        android:layout_width="289dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:text="3. 오송역"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jochiwonButton" />
+
+</android.support.constraint.ConstraintLayout>
