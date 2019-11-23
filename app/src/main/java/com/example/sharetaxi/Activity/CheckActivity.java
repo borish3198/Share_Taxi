@@ -1,19 +1,19 @@
-package com.example.sharetaxi;
+package com.example.sharetaxi.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.example.sharetaxi.Request.CheckRequest;
+import com.example.sharetaxi.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 public class CheckActivity extends AppCompatActivity {
 

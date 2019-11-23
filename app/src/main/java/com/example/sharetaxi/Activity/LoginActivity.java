@@ -1,4 +1,4 @@
-package com.example.sharetaxi;
+package com.example.sharetaxi.Activity;
 
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -12,6 +12,8 @@ import android.widget.TextView;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.example.sharetaxi.Request.LoginRequest;
+import com.example.sharetaxi.R;
 
 import org.json.JSONObject;
 
@@ -56,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                                 String userPassword = jsonResponse.getString("userPassword");
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 intent.putExtra("userID", userID);
-                                intent.putExtra("userPassword", userPassword);
+                                //intent.putExtra("userPassword", userPassword);
                                 intent.putExtra("userName", jsonResponse.getString("userName"));
                                 LoginActivity.this.startActivity(intent);}
                             else {
